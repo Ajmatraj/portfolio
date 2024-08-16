@@ -9,8 +9,8 @@
   <!-- 
     - primary meta tags
   -->
-  <title>Kane Williams - Web & App Developer</title>
-  <meta name="title" content="Kane Williams - Web & App Developer">
+  <title>Ajmat raj - Web & App Developer</title>
+  <meta name="title" content="Ajmat raj - Web & App Developer">
   <meta name="description" content="This is a personal portfolio html template made by codewithsadee">
 
   <!-- 
@@ -29,6 +29,7 @@
     - custom css link
   -->
   <link rel="stylesheet" href="./assets/css/style.css">
+  <link rel="stylesheet" href="./assets/css/form.css">
 
   <!-- 
     - preload images
@@ -59,7 +60,8 @@
     <div class="container">
 
       <a href="#" class="logo">
-        <img src="./assets/images/logo.svg" width="170" height="40" alt="Pfolio home">
+       
+        <h2 class="h4">Ajmat</h2>
       </a>
 
       <button class="nav-toggle-btn" data-nav-toggler data-nav-toggle-btn aria-label="Toggle menu">
@@ -71,27 +73,29 @@
         <ul class="navbar-list">
 
           <li>
-            <a href="#" class="navbar-link">Home</a>
+            <a href="#home" class="navbar-link">Home</a>
           </li>
 
           <li>
-            <a href="#" class="navbar-link">Resume</a>
+            <a href="#Resume" class="navbar-link">Resume</a>
           </li>
 
           <li>
-            <a href="#" class="navbar-link">Services</a>
+            <a href="#service" class="navbar-link">Services</a>
           </li>
 
           <li>
-            <a href="#" class="navbar-link">Portfolio</a>
+            <a href="#skills" class="navbar-link">skills</a>
           </li>
 
           <li>
-            <a href="#" class="navbar-link">Blog</a>
+            <a href="#portfolio" class="navbar-link">Portfolio</a>
           </li>
 
+         
+
           <li>
-            <a href="#" class="navbar-link">Contact</a>
+            <a href="#Contact" class="navbar-link">Contact</a>
           </li>
 
         </ul>
@@ -113,31 +117,46 @@
         - #HERO
       -->
 
-      <section class="section hero" aria-label="home">
+      <section class="section hero" aria-label="home" id="home">
         <div class="container">
 
           <div class="hero-content">
 
-            <h1 class="h1 hero-title">Kane Williams</h1>
+            <h1 class="h1 hero-title">Ajmat raj</h1>
 
             <p class="hero-subtitle">
               Creative Web & App Developer
             </p>
 
             <div class="hero-banner">
-              <img src="./assets/images/hero-banner.jpg" width="800" height="800" alt="kane williams" class="w-100">
+              <img src="./assets/images/hero-banner.jpg" width="800" height="800" alt="Ajmat raj" class="w-100">
             </div>
 
             <p class="section-text">
-              Hi, I’m kane williams and I am creative web & app developer who dream making the world better place by
+              Hi, I’m Ajmat raj and I am creative web & app developer who dream making the world better place by
               creating captivating products.
             </p>
 
-            <a href="#" class="btn has-before">
+            <!-- <a href="#" class="btn has-before">
               <span class="span">Download CV</span>
 
               <ion-icon name="download-outline" aria-hidden="true"></ion-icon>
+            </a> -->
+            <a href="./assets/Mohammad Ajamatullah_cv.pdf" download="YourCV.pdf" class="btn has-before">
+              <span class="span">Download CV</span>
+              <ion-icon name="download-outline" aria-hidden="true"></ion-icon>
             </a>
+            <script>
+              document.getElementById("downloadCv").addEventListener("click", function (event) {
+                event.preventDefault();
+                const link = document.createElement('a');
+                link.href = './assets/Mohammad Ajamatullah_cv.pdf'; // Replace with the actual path
+                link.download = 'YourCV.pdf'; // The name to save the file as
+                document.body.appendChild(link);
+                link.click();
+                document.body.removeChild(link);
+              });
+            </script>
 
           </div>
 
@@ -152,7 +171,7 @@
         - #SERVICE
       -->
 
-      <section class="service" aria-labelledby="service-label">
+      <section class="service" aria-labelledby="service-label" id="service">
         <div class="container">
 
           <div class="title-wrapper">
@@ -166,9 +185,11 @@
             </div>
 
             <p class="section-text">
-              Phasellus et lacus suscipit congue nisl the volutpat magna. donec miss the drana risus tincidunt convallis
-              velit orci congue tortor eu dignissim ipsum suam non odio. Pellenta esuntion miss the imperdiet metus
-              ornare.
+              I’m a full-stack web developer with expertise in both front-end and back-end development. 
+              I specialize in creating responsive websites, intuitive UI/UX designs, and robust e-commerce
+               platforms. On the front end, I work with technologies like HTML, CSS, JavaScript, and React.js 
+               to build engaging user interfaces. On the back end, I have experience with Node.js, Express, .NET, 
+               and databases like SQL 
             </p>
 
           </div>
@@ -187,8 +208,7 @@
                   <h3 class="h3 card-title">Website Design</h3>
 
                   <p class="card-text">
-                    Website ravida surna eveti semen the conse tusio anivite dianne one nivam acestion vue artin dictum.
-                  </p>
+                    Creating modern, responsive, and visually engaging websites tailored to your brand’s identity and user needs.                  </p>
 
                   <span class="text-lg card-number">01</span>
 
@@ -207,7 +227,7 @@
                   <h3 class="h3 card-title">SEO Marketing</h3>
 
                   <p class="card-text">
-                    Website ravida surna eveti semen the conse tusio anivite dianne one nivam acestion vue artin dictum.
+                    Boosting your website's visibility on search engines with strategic SEO techniques to attract more traffic and improve rankings.
                   </p>
 
                   <span class="text-lg card-number">02</span>
@@ -227,7 +247,7 @@
                   <h3 class="h3 card-title">eCommerce</h3>
 
                   <p class="card-text">
-                    Website ravida surna eveti semen the conse tusio anivite dianne one nivam acestion vue artin dictum.
+                    Building secure and scalable eCommerce platforms that offer a seamless shopping experience and drive online sales.
                   </p>
 
                   <span class="text-lg card-number">03</span>
@@ -247,7 +267,7 @@
                   <h3 class="h3 card-title">Graphic Design</h3>
 
                   <p class="card-text">
-                    Website ravida surna eveti semen the conse tusio anivite dianne one nivam acestion vue artin dictum.
+                    Creating visually compelling graphics that enhance brand identity and effectively communicate your message through design.
                   </p>
 
                   <span class="text-lg card-number">04</span>
@@ -264,10 +284,10 @@
                     <ion-icon name="megaphone-outline"></ion-icon>
                   </div>
 
-                  <h3 class="h3 card-title">Digital Marketing</h3>
+                  <h3 class="h3 card-title">UI/UX Design</h3>
 
                   <p class="card-text">
-                    Website ravida surna eveti semen the conse tusio anivite dianne one nivam acestion vue artin dictum.
+                    Designing intuitive and engaging user interfaces with a focus on enhancing user experience and ensuring seamless interactions.
                   </p>
 
                   <span class="text-lg card-number">05</span>
@@ -281,13 +301,13 @@
                 <div class="service-card">
 
                   <div class="card-icon">
-                    <ion-icon name="chatbubbles-outline"></ion-icon>
+                    <ion-icon name="desktop-outline"></ion-icon>
                   </div>
 
-                  <h3 class="h3 card-title">Social Media</h3>
+                  <h3 class="h3 card-title">Backend Development</h3>
 
                   <p class="card-text">
-                    Website ravida surna eveti semen the conse tusio anivite dianne one nivam acestion vue artin dictum.
+                    Building robust and scalable server-side applications using technologies like Node.js, .NET, and databases to support your website’s functionality and performance.
                   </p>
 
                   <span class="text-lg card-number">06</span>
@@ -317,6 +337,8 @@
       </section>
 
 
+    
+
 
 
 
@@ -324,7 +346,7 @@
         - #SKILLS
       -->
 
-      <section class="section skills" aria-label="our skills">
+      <section class="section skills" aria-label="our skills" id="skills">
         <div class="container">
 
           <p class="section-subtitle">I Make The Future</p>
@@ -335,73 +357,143 @@
 
             <div>
               <p class="section-text">
-                Pellentesque magna magna semper dapibus felis necatin aliuen risus. Pellentesque habitant morbi senectus
-                dictum.
+                I craft innovative digital solutions that drive progress and transform ideas into reality. With a keen eye for detail and a passion for technology, I bring your vision to life through cutting-edge web design and development.
+
               </p>
 
               <p class="section-text">
-                Web design magna magna semper dapibus felis necatin aliuen risus. Pellentesque habitant morbi tristique
-                senectus the neuse malesuada nullam ac lorem miss the duru.
+                My expertise spans from intuitive UI/UX design to robust backend systems, ensuring a seamless and engaging user experience. I’m dedicated to creating impactful digital experiences that stand the test of time and keep your business ahead in a fast-evolving landscape.
+  
               </p>
 
-              <a href="#" class="btn has-before">info@kwilliams.com</a>
+              <a href="#" class="btn has-before">ajmat786raj@gmail.com</a>
             </div>
 
-            <div>
+            <div class="title-wrapper container">
 
-              <ul class="skills-list">
-
-                <li>
-                  <div class="progress-wrapper">
-                    <p class="progress-label">Design</p>
-
-                    <data class="progress-value" value="90">90%</data>
-                  </div>
-
-                  <div class="progress-bg">
-                    <div class="progress" style="width: 90%;"></div>
-                  </div>
-                </li>
-
-                <li>
-                  <div class="progress-wrapper">
-                    <p class="progress-label">Branding</p>
-
-                    <data class="progress-value" value="80">80%</data>
-                  </div>
-
-                  <div class="progress-bg">
-                    <div class="progress" style="width: 80%;"></div>
-                  </div>
-                </li>
-
-                <li>
-                  <div class="progress-wrapper">
-                    <p class="progress-label">Web Design</p>
-
-                    <data class="progress-value" value="95">95%</data>
-                  </div>
-
-                  <div class="progress-bg">
-                    <div class="progress" style="width: 95%;"></div>
-                  </div>
-                </li>
-
-                <li>
-                  <div class="progress-wrapper">
-                    <p class="progress-label">Social Media</p>
-
-                    <data class="progress-value" value="85">85%</data>
-                  </div>
-
-                  <div class="progress-bg">
-                    <div class="progress" style="width: 85%;"></div>
-                  </div>
-                </li>
-
-              </ul>
-
+              <div>
+               <h2 class="h2 section-title">skills</h2>
+              </div>
+    
             </div>
+
+            
+
+          </div>
+
+          <div>
+
+            <ul class="skills-list">
+
+              <li>
+                <div class="progress-wrapper">
+                  <p class="progress-label">HTML</p>
+
+                  <data class="progress-value" value="90">90%</data>
+                </div>
+
+                <div class="progress-bg">
+                  <div class="progress" style="width: 90%;"></div>
+                </div>
+              </li>
+
+              <li>
+                <div class="progress-wrapper">
+                  <p class="progress-label">CSS</p>
+
+                  <data class="progress-value" value="80">80%</data>
+                </div>
+
+                <div class="progress-bg">
+                  <div class="progress" style="width: 80%;"></div>
+                </div>
+              </li>
+
+              <li>
+                <div class="progress-wrapper">
+                  <p class="progress-label">JavaScript</p>
+
+                  <data class="progress-value" value="70">70%</data>
+                </div>
+
+                <div class="progress-bg">
+                  <div class="progress" style="width: 70%;"></div>
+                </div>
+              </li>
+
+              <li>
+                <div class="progress-wrapper">
+                  <p class="progress-label">java</p>
+
+                  <data class="progress-value" value="70">70%</data>
+                </div>
+
+                <div class="progress-bg">
+                  <div class="progress" style="width: 70%;"></div>
+                </div>
+              </li>
+
+              <li>
+                <div class="progress-wrapper">
+                  <p class="progress-label">C#</p>
+
+                  <data class="progress-value" value="50">50%</data>
+                </div>
+
+                <div class="progress-bg">
+                  <div class="progress" style="width: 50%;"></div>
+                </div>
+              </li>
+
+              <li>
+                <div class="progress-wrapper">
+                  <p class="progress-label">.NET MVC</p>
+
+                  <data class="progress-value" value="70">70%</data>
+                </div>
+
+                <div class="progress-bg">
+                  <div class="progress" style="width: 70%;"></div>
+                </div>
+              </li>
+            
+              <li>
+                <div class="progress-wrapper">
+                  <p class="progress-label">React js</p>
+
+                  <data class="progress-value" value="70">70%</data>
+                </div>
+
+                <div class="progress-bg">
+                  <div class="progress" style="width: 70%;"></div>
+                </div>
+              </li>
+
+              <li>
+                <div class="progress-wrapper">
+                  <p class="progress-label">Bootstrap/ tailwind css</p>
+
+                  <data class="progress-value" value="80">80%</data>
+                </div>
+
+                <div class="progress-bg">
+                  <div class="progress" style="width: 80%;"></div>
+                </div>
+              </li>
+
+              <li>
+                <div class="progress-wrapper">
+                  <p class="progress-label">Git/Git-Hub</p>
+
+                  <data class="progress-value" value="70">70%</data>
+                </div>
+
+                <div class="progress-bg">
+                  <div class="progress" style="width: 70%;"></div>
+                </div>
+              </li>
+
+            </ul>
 
           </div>
 
@@ -416,7 +508,7 @@
         - #PORTFOLIO
       -->
 
-      <section class="portfolio" aria-labelledby="portfolio-label">
+      <section class="portfolio" aria-labelledby="portfolio-label" id="portfolio">
 
         <div class="title-wrapper container">
 
@@ -427,9 +519,8 @@
           </div>
 
           <p class="section-text">
-            Phasellus et lacus suscipit congue nisl the volutpat magna. donec miss the drana risus tincidunt convallis
-            velit orci congue tortor eu dignissim ipsum suam non odio. Pellenta esuntion miss the imperdiet metus
-            ornare.
+            Explore my portfolio to see a curated selection of projects that demonstrate my skills and creativity in web development and design. From innovative websites and engaging user interfaces to robust backend solutions and eCommerce platforms, each project reflects my commitment to delivering high-quality digital experiences. Dive into my work to discover how I can help bring your vision to life.
+
           </p>
 
         </div>
@@ -441,11 +532,11 @@
             <li class="slider-item">
               <div class="portfolio-card img-holder" style="--width: 600; --height: 600;">
 
-                <img src="./assets/images/portfolio-1.jpg" width="600" height="600" loading="lazy" alt="portfolio"
+                <img src="./assets/images/portfolio-1.png" width="600" height="600" loading="lazy" alt="portfolio"
                   class="img-cover">
 
                 <div class="card-content">
-                  <h3 class="h3 card-title">Lab. 001</h3>
+                  <h3 class="h3 card-title">Botanical Training Institute</h3>
 
                   <p class="card-text">Website Design</p>
                 </div>
@@ -458,11 +549,11 @@
             <li class="slider-item">
               <div class="portfolio-card img-holder" style="--width: 600; --height: 600;">
 
-                <img src="./assets/images/portfolio-2.jpg" width="600" height="600" loading="lazy" alt="portfolio"
+                <img src="./assets/images/portfolio-2.png" width="600" height="600" loading="lazy" alt="portfolio"
                   class="img-cover">
 
                 <div class="card-content">
-                  <h3 class="h3 card-title">Aer Agency</h3>
+                  <h3 class="h3 card-title">Adidas</h3>
 
                   <p class="card-text">Website / Development</p>
                 </div>
@@ -475,11 +566,11 @@
             <li class="slider-item">
               <div class="portfolio-card img-holder" style="--width: 600; --height: 600;">
 
-                <img src="./assets/images/portfolio-3.jpg" width="600" height="600" loading="lazy" alt="portfolio"
+                <img src="./assets/images/portfolio-3.png" width="600" height="600" loading="lazy" alt="portfolio"
                   class="img-cover">
 
                 <div class="card-content">
-                  <h3 class="h3 card-title">Joker Card</h3>
+                  <h3 class="h3 card-title">Mobile Banking</h3>
 
                   <p class="card-text">UX Design / Web App</p>
                 </div>
@@ -558,104 +649,79 @@
 
       </section>
 
-
-
-
-
-      <!-- 
-        - #BLOG
-      -->
-
-      <section class="section blog" aria-labelledby="blog-label">
-        <div class="container">
-
-          <p class="section-subtitle" id="blog-label">Recent Articles</p>
-
-          <h2 class="h2 section-title">Latest News</h2>
-
-          <ul class="blog-list">
-
-            <li>
-              <div class="blog-card">
-
-                <figure class="card-banner img-holder" style="--width: 700; --height: 470;">
-                  <img src="./assets/images/blog-1.jpg" width="700" height="470" loading="lazy"
-                    alt="Get Started With Tiktok Ads." class="img-cover">
-                </figure>
-
-                <div class="card-content">
-
-                  <time class="time" datetime="2022-06-24">
-                    <span class="span text-lg">24</span>
-                    June 2022
-                  </time>
-
-                  <div>
-                    <h3 class="h3 card-title">Get Started With Tiktok Ads.</h3>
-
-                    <p class="card-text">
-                      Phasellus et lacus suscipit congue nis in the miss mine one miss the drana risus in tincidunt
-                      ornare.
-                    </p>
-
-                    <a href="#" class="btn has-before">
-                      <span class="span">Read more</span>
-
-                      <ion-icon name="arrow-forward"></ion-icon>
-                    </a>
-                  </div>
-
-                </div>
-
-              </div>
-            </li>
-
-            <li>
-              <div class="blog-card">
-
-                <figure class="card-banner img-holder" style="--width: 700; --height: 470;">
-                  <img src="./assets/images/blog-2.jpg" width="700" height="470" loading="lazy"
-                    alt="UX in Ecommerce – 5 things to avoid." class="img-cover">
-                </figure>
-
-                <div class="card-content">
-
-                  <time class="time" datetime="2022-06-27">
-                    <span class="span text-lg">27</span>
-                    June 2022
-                  </time>
-
-                  <div>
-                    <h3 class="h3 card-title">UX in Ecommerce – 5 things to avoid.</h3>
-
-                    <p class="card-text">
-                      Phasellus et lacus suscipit congue nis in the miss mine one miss the drana risus in tincidunt
-                      ornare.
-                    </p>
-
-                    <a href="#" class="btn has-before">
-                      <span class="span">Read more</span>
-
-                      <ion-icon name="arrow-forward"></ion-icon>
-                    </a>
-                  </div>
-
-                </div>
-
-              </div>
-            </li>
-
-          </ul>
-
-        </div>
-      </section>
-
     </article>
   </main>
 
 
 
+  <section class="service" aria-labelledby="service-label" id="Contact">
+  <div class="container">
+    <div class="contact_us_2">
+      <div class="responsive-container-block big-container">
+        <div class="blueBG"></div>
+        <div class="responsive-container-block container">
+          <form class="form-box" action="https://api.web3forms.com/submit" method="POST">
+            <div class="container-block form-wrapper">
+              <h1 class="h1 hero-title">Get in touch</h1>
+              <p class="section-text">
+                We would love to respond to your queries and help you succeed. Feel free to get in touch with us.
+              </p>
 
+              <!-- Hidden field for access key -->
+              <input type="hidden" name="access_key" value="2fe65ab0-7563-414b-aa87-475abe4d694f">
+  
+              <div class="responsive-container-block">
+                <!-- First Name -->
+                <div class="responsive-cell-block wk-ipadp-6 wk-tab-12 wk-mobile-12 wk-desk-6" id="i10mt">
+                  <p class="text-blk input-title">FIRST NAME</p>
+                  <input class="input" id="FirstName" name="FirstName" placeholder="Please enter first name..." required>
+                </div>
+                <!-- Last Name -->
+                <div class="responsive-cell-block wk-desk-6 wk-ipadp-6 wk-tab-12 wk-mobile-12">
+                  <p class="text-blk input-title">LAST NAME</p>
+                  <input class="input" id="LastName" name="LastName" placeholder="Please enter last name..." required>
+                </div>
+                <!-- Email -->
+                <div class="responsive-cell-block wk-desk-6 wk-ipadp-6 wk-tab-12 wk-mobile-12">
+                  <p class="text-blk input-title">EMAIL</p>
+                  <input class="input" id="Email" name="Email" type="email" placeholder="Please enter email..." required>
+                </div>
+                <!-- Phone Number -->
+                <div class="responsive-cell-block wk-desk-6 wk-ipadp-6 wk-tab-12 wk-mobile-12">
+                  <p class="text-blk input-title">PHONE NUMBER</p>
+                  <input class="input" id="PhoneNumber" name="PhoneNumber" placeholder="Please enter phone number...">
+                </div>
+                <!-- Message -->
+                <div class="responsive-cell-block wk-tab-12 wk-mobile-12 wk-desk-12 wk-ipadp-12" id="i634i">
+                  <p class="text-blk input-title">WHAT DO YOU HAVE IN MIND</p>
+                  <textarea class="textinput" id="Message" name="Message" placeholder="Please enter query..." required></textarea>
+                </div>
+              </div>
+  
+              <!-- Submit Button -->
+              <button class="submit-btn" type="submit">
+                <div class="svg-wrapper-1">
+                  <div class="svg-wrapper">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24">
+                      <path fill="none" d="M0 0h24v24H0z"></path>
+                      <path fill="currentColor" d="M1.946 9.315c-.522-.174-.527-.455.01-.634l19.087-6.362c.529-.176.832.12.684.638l-5.454 19.086c-.15.529-.455.547-.679.045L12 14l6-8-8 6-8.054-2.685z"></path>
+                    </svg>
+                  </div>
+                </div>
+                <span>Submit</span>
+              </button>
+  
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+  
+  
+  
 
   <!-- 
     - #FOOTER
@@ -671,7 +737,7 @@
         </li>
 
         <li>
-          <a href="mailto:info@kwilliams.com" class="footer-link">info@kwilliams.com</a>
+          <a href="mailto:ajmat786raj@gmail.com" class="footer-link">ajmat786raj@gmail.com</a>
         </li>
 
       </ul>
@@ -683,33 +749,29 @@
         </li>
 
         <li>
-          <a href="#" class="footer-link">San Francisco — California</a>
+          <a href="#" class="footer-link">Nepla - Kathmandu</a>
         </li>
 
       </ul>
 
       <ul class="social-list">
 
-        <li>
-          <a href="#" class="social-link">
-            <ion-icon name="logo-dribbble"></ion-icon>
-          </a>
-        </li>
+       
 
         <li>
-          <a href="#" class="social-link">
+          <a href="https://www.instagram.com/ajmat_razz?igsh=dmVjMDhzbDZwb3hx" class="social-link">
             <ion-icon name="logo-instagram"></ion-icon>
           </a>
         </li>
 
         <li>
-          <a href="#" class="social-link">
-            <ion-icon name="logo-skype"></ion-icon>
+          <a href="#https://www.facebook.com/ajamat.razz/" class="social-link">
+            <ion-icon name="logo-facebook"></ion-icon>
           </a>
         </li>
 
         <li>
-          <a href="#" class="social-link">
+          <a href="https://www.linkedin.com/in/mohammad-ajamatullah-bsc-hons-computing-243349295/" class="social-link">
             <ion-icon name="logo-linkedin"></ion-icon>
           </a>
         </li>

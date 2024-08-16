@@ -147,3 +147,16 @@ const initSlider = function (currentSlider) {
 }
 
 for (let i = 0, len = sliders.length; i < len; i++) { initSlider(sliders[i]); }
+
+
+const navLinks = document.querySelectorAll('.navbar-link');
+
+const handleNavLinkClick = function () {
+  // Close the navbar if it is open
+  if (navbar.classList.contains('active')) {
+    toggleNavbar();
+  }
+};
+
+// Add the click event to each navbar link
+addEventOnElements(navLinks, 'click', handleNavLinkClick);
